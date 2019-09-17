@@ -15,7 +15,7 @@ namespace ZooKeeper.Model
             this.filepath = filepath;
         }
 
-        public bool populate(ref Store store)
+        public bool populate(Store store)
         {
             return true;
         }
@@ -23,6 +23,12 @@ namespace ZooKeeper.Model
         public bool export(Store store)
         {
             return true;
+        }
+
+        public string Filepath
+        {
+            get { return filepath; }
+            set { filepath = value; }
         }
     }
 }

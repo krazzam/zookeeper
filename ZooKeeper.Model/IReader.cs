@@ -8,6 +8,6 @@ namespace ZooKeeper.Model
 {
     public interface IReader
     {
-        bool populate(ref Store store);
+        bool populate(Store store);
     }
 }

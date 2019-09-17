@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooKeeper.Model
 {
-    class Animal
+    public class Animal
     {
         private string species;
         readonly int id;

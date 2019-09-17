@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Animal.cs" />
     <Compile Include="IReader.cs" />
+    <Compile Include="IStore.cs" />
     <Compile Include="IWriter.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
