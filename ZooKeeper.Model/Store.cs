@@ -44,7 +44,7 @@ namespace ZooKeeper.Model
 
         
 
-        public Animal FindById(int id)
+        public Animal FindById(string id)
         {
             Animal result = null;
             Predicate<Animal> animal = (Animal a) => { return a.ID == id; };
@@ -58,7 +58,7 @@ namespace ZooKeeper.Model
             store.Add(animal);   
         }
 
-        public bool RemoveAnimal(int id)
+        public bool RemoveAnimal(string id)
         {
             bool status = false;
 

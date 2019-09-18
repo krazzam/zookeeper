@@ -8,42 +8,19 @@ namespace ZooKeeper.Model
 {
     public class Animal
     {
-        private string species;
-        readonly int id;
-        private string exhibit;
-        private DateTime lastHealthExam;
+        private static int id_seed = 1000000;
 
         public Animal(string species, string exhibit)
         {
             Species = species;
             Exhibit = exhibit;
-
-            // generate a random id
-            Random random = new Random();
-            id = random.Next(10000000);
+            ID = id_seed.ToString();
+            id_seed++;
         }
 
-        public string Species
-        {
-            get { return species; }
-            set { species = value; }
-        }
-
-        public int ID
-        {
-            get { return id; }
-        }
-
-        public string Exhibit
-        {
-            get { return exhibit; }
-            set { exhibit = value; }
-        }
-
-        public DateTime LastHealthExam
-        {
-            get { return lastHealthExam; }
-            set { lastHealthExam = value; }
-        }
+        public string Species { get; set; }
+        public string ID { get; }
+        public string Exhibit { get; set; }
+        public DateTime LastHealthExam { get; set; }
     }
 }

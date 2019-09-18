@@ -8,11 +8,9 @@ namespace ZooKeeper.Model
 {
     class XmlStream : IReader, IWriter
     {
-        string filepath;
-
         public XmlStream(string filepath)
         {
-            this.filepath = filepath;
+            Filepath = filepath;
         }
 
         public bool populate(Store store)
@@ -27,8 +25,8 @@ namespace ZooKeeper.Model
 
         public string Filepath
         {
-            get { return filepath; }
-            set { filepath = value; }
+            get => Filepath;
+            set => Filepath = value;
         }
     }
 }
