@@ -9,8 +9,8 @@ namespace ZooKeeper.Model
     public interface IAnimal
     {
         string ID { get; }
-        string Species { get; }
         string Exhibit { get; set; }
+        Classification Classification { get; }
         DateTime LastHealthExam { get; set; }
     }
 }

@@ -10,17 +10,16 @@ namespace ZooKeeper.Model
     {
         private static int id_seed = 1000000;
 
-        public Animal(string species, string exhibit)
+        public Animal()
         {
-            Species = species;
-            Exhibit = exhibit;
             ID = id_seed.ToString();
             id_seed++;
         }
 
-        public string Species { get; }
         public string ID { get; }
+        public string DOB { get; set; }
         public string Exhibit { get; set; }
+        public Classification Classification { get; }
         public DateTime LastHealthExam { get; set; }
     }
 }

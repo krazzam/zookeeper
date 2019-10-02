@@ -33,7 +33,7 @@ namespace ZooKeeper.Model
 
             foreach (Animal animal in store)
             {
-                if (animal.Species == species)
+                if (animal.Classification.Species == species)
                 {
                     results.Add(animal);
                 }
