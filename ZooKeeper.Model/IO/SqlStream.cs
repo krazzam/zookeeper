@@ -23,10 +23,6 @@ namespace ZooKeeper.Model
             return true;
         }
 
-        public string Filepath
-        {
-            get => Filepath;
-            set => Filepath = value;
-        }
+        public string Filepath { get; set; }
     }
 }

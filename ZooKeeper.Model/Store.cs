@@ -12,6 +12,21 @@ namespace ZooKeeper.Model
 
         public Store() { }
 
+        public bool ImportFrom(IReader reader)
+        {
+            return reader.populate(this);
+        }
+
+        public bool ExportTo(IWriter writer)
+        {
+            return writer.export(this);
+        }
+
+        public void AddAnimal(Animal animal)
+        {
+            store.Add(animal);
+        }
+
         public List<Animal> FindBySpecies(string species)
         {
             List<Animal> results = new List<Animal>();
@@ -49,11 +64,6 @@ namespace ZooKeeper.Model
             result = store.Find(animal);
 
             return result;
-        }
-
-        public void AddAnimal(Animal animal)
-        {
-            store.Add(animal);   
         }
 
         public bool RemoveAnimal(string id)
