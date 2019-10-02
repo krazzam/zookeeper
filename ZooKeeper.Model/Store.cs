@@ -40,9 +40,7 @@ namespace ZooKeeper.Model
             }
 
             return results;
-        }
-
-        
+        }     
 
         public Animal FindById(string id)
         {

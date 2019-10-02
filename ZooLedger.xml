@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample ZooLedger that can be imported. -->
+<ZooLedger>
+	<Mammals>
+		<Carnivores>
+			<Entity species="Coyote" DOB="1/1/1999" ID="1241434" Location="Exhibit 1-D" LastHealthExam="9/14/2018" />
+			<Entity species="Swift Fox" DOB="2/3/2001" ID="444433" Location="Exhibit 1-F" LastHealthExam="9/14/2015" />
+			<Entity species="Black Bear" DOB="5/3/2008" ID="333322" Location="Exhibit 2-G" LastHealthExam="9/14/2011" />
+		</Carnivores>
+		<Primates>
+			<Entity species="Lowland Gorilla" DOB="1/1/1999" ID="1245434" Location="Exhibit 2-A" LastHealthExam="9/14/2017" />
+			<Entity species="Lowland Gorilla" DOB="1/5/1999" ID="1245464" Location="Exhibit 2-A" LastHealthExam="9/14/2017" />
+			<Entity species="Chimpanzee" DOB="1/5/2016" ID="1225464" Location="Exhibit 2-B" LastHealthExam="1/14/2017" />
+			<Entity species="Orangutan" DOB="1/5/2013" ID="1225469" Location="Exhibit 2-C" LastHealthExam="1/14/2018" />
+		</Primates>
+		<Marsupials>
+			<Entity species="Koala" DOB="1/1/2017" ID="12455534" Location="Exhibit 3-A" LastHealthExam="9/14/2017" />
+			<Entity species="Koala" DOB="1/1/2017" ID="12455535" Location="Exhibit 3-A" LastHealthExam="9/14/2017" />
+			<Entity species="Kangaroo" DOB="1/1/2005" ID="12535" Location="Exhibit 3-A" LastHealthExam="4/14/2018" />
+		</Marsupials>
+	</Mammals>
+	<Reptiles>
+		<Crododilians>
+			<Entity species="Caiman" DOB="1/1/2014" ID="12425535" Location="Exhibit 1-G" LastHealthExam="9/23/2017" />
+		</Crododilians>
+		<Turtles>
+			<Entity species="Matamata Turtle" DOB="1/1/2012" ID="123155" Location="Exhibit 3-B" LastHealthExam="9/14/2019" />
+			<Entity species="Spotted Pond Turtle" DOB="1/1/2014" ID="1231445" Location="Exhibit 3-B" LastHealthExam="9/14/2019" />
+		</Turtles>
+		<Lizards>
+			<Entity species="Green Iguana" DOB="5/1/2017" ID="1245835" Location="Exhibit 4-J" LastHealthExam="9/4/2017" />
+			<Entity species="Water Monitor" DOB="7/1/2017" ID="1245805" Location="Exhibit 4-J" LastHealthExam="9/14/2017" />
+		</Lizards>
+		<Snakes>
+			<Entity species="Blood Python" DOB="1/1/2016" ID="1245135" Location="Exhibit 3-B" LastHealthExam="9/14/2018" />
+		</Snakes>
+	</Reptiles>
+	<Birds>
+		<Entity species="Scarlet Macaw" DOB="1/1/2015" ID="12451735" Location="Exhibit 3-C" LastHealthExam="9/14/2018" />
+		<Entity species="African Penguin" DOB="1/1/2004" ID="88851735" Location="Exhibit 3-G" LastHealthExam="9/20/2018" />
+	</Birds>
+	<Fish>
+		<Entity species="Nurse Shark" DOB="5/5/2016" ID="1245177" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
+		<Entity species="Nurse Shark" DOB="5/5/2016" ID="1245178" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
+		<Entity species="Motoro Ray" DOB="4/5/2018" ID="1245179" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
+	</Fish>
+</ZooLedger>

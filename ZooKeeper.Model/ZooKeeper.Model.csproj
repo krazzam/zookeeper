@@ -42,12 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
-    <Compile Include="IReader.cs" />
-    <Compile Include="IStore.cs" />
-    <Compile Include="IWriter.cs" />
+    <Compile Include="Interfaces\IAnimal.cs" />
+    <Compile Include="IO\IReader.cs" />
+    <Compile Include="Interfaces\IStore.cs" />
+    <Compile Include="IO\IWriter.cs" />
+    <Compile Include="IO\SqlStream.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XmlStream.cs" />
+    <Compile Include="IO\XmlStream.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

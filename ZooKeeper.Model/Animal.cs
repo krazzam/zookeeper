@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooKeeper.Model
 {
-    public class Animal
+    public class Animal : IAnimal
     {
         private static int id_seed = 1000000;
 
@@ -18,7 +18,7 @@ namespace ZooKeeper.Model
             id_seed++;
         }
 
-        public string Species { get; set; }
+        public string Species { get; }
         public string ID { get; }
         public string Exhibit { get; set; }
         public DateTime LastHealthExam { get; set; }
