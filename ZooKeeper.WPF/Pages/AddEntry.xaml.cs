@@ -13,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ZooKeeper
+namespace ZooKeeper.WPF.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddEntry.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddEntry : Page
     {
-        public MainWindow()
+        public AddEntry()
         {
             InitializeComponent();
-            Main.Content = new WPF.Pages.AddEntry();
         }
-
     }
 }

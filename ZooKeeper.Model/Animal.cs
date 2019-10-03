@@ -10,8 +10,9 @@ namespace ZooKeeper.Model
     {
         private static int id_seed = 1000000;
 
-        public Animal()
+        public Animal(Classification classification)
         {
+            Classification = classification;
             ID = id_seed.ToString();
             id_seed++;
         }

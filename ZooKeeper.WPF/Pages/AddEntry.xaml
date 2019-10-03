@@ -1,0 +1,57 @@
+﻿<Page x:Class="ZooKeeper.WPF.Pages.AddEntry"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZooKeeper.WPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEntry">
+    <StackPanel>
+        <TextBlock Text="Add Entry" FontSize="20" FontWeight="DemiBold" TextAlignment="Left" Margin="5 0 0 0"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Class" Margin="5 0 10 0"/>
+                <ComboBox Padding="2" Margin="5 0 10 0" />
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Order"/>
+                <ComboBox Padding="2" Margin="0 0 10 0" />
+            </StackPanel>
+        </Grid>
+        <Grid Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="129*" />
+                <ColumnDefinition Width="55*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="200*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Grid.ColumnSpan="3">
+                <TextBlock Text="Species" Margin="5 0 10 0"/>
+                <ComboBox Padding="2" Margin="5 0 10 0" />
+            </StackPanel>
+            <StackPanel Grid.Column="3">
+                <TextBlock Text="Date Acquired"/>
+                <DatePickerTextBox Padding="2" Margin="0 0 10 0" />
+            </StackPanel>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Location" Margin="5 0 10 0"/>
+                <ComboBox Padding="2" Margin="5,0,410,1000"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Last Health Exam" Margin="5 0 10 0"/>
+                <DatePickerTextBox Padding="2" Margin="5,0,410,1000"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Page>
