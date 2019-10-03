@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace ZooKeeper.Model
 {
@@ -15,7 +16,12 @@ namespace ZooKeeper.Model
 
         public bool populate(Store store)
         {
-            return true;
+            bool success = true;
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load(Filepath);
+
+            return success;
         }
 
         public bool export(Store store)
