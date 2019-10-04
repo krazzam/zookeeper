@@ -36,12 +36,18 @@
 		</Snakes>
 	</Reptiles>
 	<Birds>
-		<Entity species="Scarlet Macaw" DOB="1/1/2015" ID="12451735" Location="Exhibit 3-C" LastHealthExam="9/14/2018" />
-		<Entity species="African Penguin" DOB="1/1/2004" ID="88851735" Location="Exhibit 3-G" LastHealthExam="9/20/2018" />
+		<Parrots>
+			<Entity species="Scarlet Macaw" DOB="1/1/2015" ID="12451735" Location="Exhibit 3-C" LastHealthExam="9/14/2018" />
+		</Parrots>
+		<Pinguins>
+			<Entity species="African Penguin" DOB="1/1/2004" ID="88851735" Location="Exhibit 3-G" LastHealthExam="9/20/2018" />
+		</Pinguins>
 	</Birds>
 	<Fish>
-		<Entity species="Nurse Shark" DOB="5/5/2016" ID="1245177" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
-		<Entity species="Nurse Shark" DOB="5/5/2016" ID="1245178" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
-		<Entity species="Motoro Ray" DOB="4/5/2018" ID="1245179" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
+		<Sharks>
+			<Entity species="Nurse Shark" DOB="5/5/2016" ID="1245177" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
+			<Entity species="Nurse Shark" DOB="5/5/2016" ID="1245178" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
+			<Entity species="Motoro Ray" DOB="4/5/2018" ID="1245179" Location="Exhibit 5-D" LastHealthExam="6/14/2018" />
+		</Sharks>
 	</Fish>
 </ZooLedger>
