@@ -46,7 +46,7 @@ namespace ZooKeeper.Model
         {
             List<Animal> results = new List<Animal>();
 
-            foreach(Animal animal in store)
+            foreach (Animal animal in store)
             {
                 if (animal.Exhibit == location)
                 {
@@ -55,7 +55,7 @@ namespace ZooKeeper.Model
             }
 
             return results;
-        }     
+        }
 
         public Animal FindById(string id)
         {
@@ -79,6 +79,11 @@ namespace ZooKeeper.Model
             }
 
             return status;
+        }
+
+        public List<Animal> GetAllAnimals
+        {
+            get { return store; }
         }
     }
 }

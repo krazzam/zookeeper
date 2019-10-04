@@ -7,34 +7,16 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage">
-    <StackPanel>
-        <Menu>
-            <MenuItem Header="_File">
-                <MenuItem Header="_Open" InputGestureText="Ctrl+O"/>
-                <MenuItem Header="_Save" InputGestureText="Ctrl+S"/>
-                <MenuItem Header="Exit"/>
-            </MenuItem>
-            <MenuItem Header="Help">
-                <MenuItem Header="About"/>
-            </MenuItem>
-        </Menu>
-        <ToolBarTray>
-            <ToolBar>
-                <!-- TODO : Fix hardcoded paths-->
-                <Button Name="toolBarAddEntry" ToolTip="Add Entry">
-                    <Image Source="C:\Users\kazzam\source\repos\zookeeper\ZooKeeper.WPF\Resources\Add.png"/>
-                </Button>
-                <Button Name="toolBarOpen" ToolTip="Open File">
-                    <Image Source="C:\Users\kazzam\source\repos\zookeeper\ZooKeeper.WPF\Resources\Open.png"/>
-                </Button>
-            </ToolBar>
-        </ToolBarTray>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-        </Grid>
-    </StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TreeView x:Name="treeView" Grid.Column="0" BorderThickness="0">
+        </TreeView>
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Details" FontSize="24" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
 
 </Page>

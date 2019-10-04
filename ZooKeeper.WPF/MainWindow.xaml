@@ -6,7 +6,28 @@
         xmlns:local="clr-namespace:ZooKeeper"
         mc:Ignorable="d"
         Title="ZooKeeper" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open" InputGestureText="Ctrl+O"/>
+                <MenuItem Header="_Save" InputGestureText="Ctrl+S"/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About"/>
+            </MenuItem>
+        </Menu>
+        <ToolBarTray>
+            <ToolBar>
+                <!-- TODO : Fix hardcoded paths-->
+                <Button Name="toolBarAddEntry" ToolTip="Add Entry" Click="toolBarAddEntry_Click">
+                    <Image Source="C:\Users\kazzam\source\repos\zookeeper\ZooKeeper.WPF\Resources\Add.png"/>
+                </Button>
+                <Button Name="toolBarOpen" ToolTip="Open File">
+                    <Image Source="C:\Users\kazzam\source\repos\zookeeper\ZooKeeper.WPF\Resources\Open.png"/>
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
         <Frame x:Name="Main" />
-    </Grid>
+    </StackPanel>
 </Window>

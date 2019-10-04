@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Pages\AddEntry.xaml">
+    <Page Include="Pages\AddEntryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -67,8 +67,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Pages\AddEntry.xaml.cs">
-      <DependentUpon>AddEntry.xaml</DependentUpon>
+    <Compile Include="Models\ZooConstants.cs" />
+    <Compile Include="Models\MainViewModel.cs" />
+    <Compile Include="Pages\AddEntryPage.xaml.cs">
+      <DependentUpon>AddEntryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -83,6 +85,7 @@
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Presenters\EntryPagePresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -113,6 +116,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZooKeeper.Model\ZooKeeper.Model.csproj">
+      <Project>{b44f3669-2397-4c73-9eb1-af312768f4ac}</Project>
+      <Name>ZooKeeper.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

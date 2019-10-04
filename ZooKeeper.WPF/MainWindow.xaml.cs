@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ZooKeeper.Model;
+using ZooKeeper.WPF.Presenters;
+using ZooKeeper.WPF.Pages;
 
 namespace ZooKeeper
 {
@@ -20,11 +23,25 @@ namespace ZooKeeper
     /// </summary>
     public partial class MainWindow : Window
     {
+        Store store;
+        MainPage mainPage;
+        AddEntryPage addEntryPage;
+        public EntryPagePresenter presenter;
+
         public MainWindow()
         {
             InitializeComponent();
-            Main.Content = new WPF.Pages.MainPage();
+
+            store = new Store();
+            mainPage = new MainPage(this);
+            addEntryPage = new AddEntryPage(this);
+            presenter = new EntryPagePresenter(mainPage, addEntryPage, store);
+            Main.Content = mainPage;
         }
 
+        private void toolBarAddEntry_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = addEntryPage;
+        }
     }
 }
